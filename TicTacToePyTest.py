@@ -19,6 +19,9 @@ class TicTacToeTest(unittest.TestCase):
 		game = TicTacToe("XXXXXXXXX")
 		assert game.move('X') == -1
 
+	def test_find_winning_row_move(self):
+		game = TicTacToe("OO-XX-OOX")
+		assert game.move('X') == 5
 
 if __name__ == '__main__':
 	unittest.main()

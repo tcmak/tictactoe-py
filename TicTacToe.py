@@ -25,4 +25,8 @@ class TicTacToe:
 		return TicTacToe(self.board, i, player)
 
 	def winner(self):
+		if self.board[0] != '-' and self.board[0] == self.board[1] and self.board[1] == self.board[2]:
+			return self.board[0]
+		if self.board[3] != '-' and self.board[3] == self.board[4] and self.board[4] == self.board[5]:
+			return self.board[3]
 		return '-'
