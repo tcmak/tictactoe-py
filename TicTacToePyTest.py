@@ -30,5 +30,8 @@ class TicTacToeTest(unittest.TestCase):
 		game = TicTacToe("------OOO")
 		assert game.winner() == 'O'
 
+		game = TicTacToe("YYY------")
+		assert game.winner() == 'Y'
+
 if __name__ == '__main__':
 	unittest.main()
