@@ -29,4 +29,6 @@ class TicTacToe:
 			return self.board[0]
 		if self.board[3] != '-' and self.board[3] == self.board[4] and self.board[4] == self.board[5]:
 			return self.board[3]
+		if self.board[6] != '-' and self.board[6] == self.board[7] and self.board[7] == self.board[8]:
+			return self.board[6]
 		return '-'
